@@ -11,6 +11,12 @@
 		8F14200A27A4110D003E6FE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F14200927A4110D003E6FE4 /* ContentView.swift */; };
 		8F14200C27A4110E003E6FE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F14200B27A4110E003E6FE4 /* Assets.xcassets */; };
 		8F14200F27A4110E003E6FE4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F14200E27A4110E003E6FE4 /* Preview Assets.xcassets */; };
+		8F14201627A4232F003E6FE4 /* GridRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F14201527A4232F003E6FE4 /* GridRow.swift */; };
+		8F14201827A559FF003E6FE4 /* keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F14201727A559FF003E6FE4 /* keyboard.swift */; };
+		8F14201A27A57163003E6FE4 /* GameMagic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F14201927A57163003E6FE4 /* GameMagic.swift */; };
+		8F14201D27A588F6003E6FE4 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F14201C27A588F6003E6FE4 /* Cell.swift */; };
+		8F4F4A9127A6BCC600C50291 /* SimpleToast in Frameworks */ = {isa = PBXBuildFile; productRef = 8F4F4A9027A6BCC600C50291 /* SimpleToast */; };
+		8FABF84727A67C0F00941236 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FABF84627A67C0F00941236 /* Words.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		8F14200927A4110D003E6FE4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8F14200B27A4110E003E6FE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F14200E27A4110E003E6FE4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8F14201527A4232F003E6FE4 /* GridRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridRow.swift; sourceTree = "<group>"; };
+		8F14201727A559FF003E6FE4 /* keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyboard.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		8F14201927A57163003E6FE4 /* GameMagic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMagic.swift; sourceTree = "<group>"; };
+		8F14201C27A588F6003E6FE4 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		8F4F4A8E27A6B11100C50291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8FABF84627A67C0F00941236 /* Words.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Words.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F4F4A9127A6BCC600C50291 /* SimpleToast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +64,15 @@
 		8F14200627A4110D003E6FE4 /* loremipsum */ = {
 			isa = PBXGroup;
 			children = (
+				8F4F4A8E27A6B11100C50291 /* Info.plist */,
+				8F14201B27A588D6003E6FE4 /* Models */,
 				8F14200727A4110D003E6FE4 /* loremipsumApp.swift */,
 				8F14200927A4110D003E6FE4 /* ContentView.swift */,
 				8F14200B27A4110E003E6FE4 /* Assets.xcassets */,
+				8F14201527A4232F003E6FE4 /* GridRow.swift */,
+				8F14201727A559FF003E6FE4 /* keyboard.swift */,
 				8F14200D27A4110E003E6FE4 /* Preview Content */,
+				8F14201927A57163003E6FE4 /* GameMagic.swift */,
 			);
 			path = loremipsum;
 			sourceTree = "<group>";
@@ -65,6 +83,15 @@
 				8F14200E27A4110E003E6FE4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8F14201B27A588D6003E6FE4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8F14201C27A588F6003E6FE4 /* Cell.swift */,
+				8FABF84627A67C0F00941236 /* Words.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +110,9 @@
 			dependencies = (
 			);
 			name = loremipsum;
+			packageProductDependencies = (
+				8F4F4A9027A6BCC600C50291 /* SimpleToast */,
+			);
 			productName = loremipsum;
 			productReference = 8F14200427A4110D003E6FE4 /* loremipsum.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +141,9 @@
 				Base,
 			);
 			mainGroup = 8F141FFB27A4110D003E6FE4;
+			packageReferences = (
+				8F4F4A8F27A6BCC600C50291 /* XCRemoteSwiftPackageReference "SimpleToast" */,
+			);
 			productRefGroup = 8F14200527A4110D003E6FE4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +170,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FABF84727A67C0F00941236 /* Words.swift in Sources */,
+				8F14201627A4232F003E6FE4 /* GridRow.swift in Sources */,
 				8F14200A27A4110D003E6FE4 /* ContentView.swift in Sources */,
+				8F14201A27A57163003E6FE4 /* GameMagic.swift in Sources */,
+				8F14201827A559FF003E6FE4 /* keyboard.swift in Sources */,
 				8F14200827A4110D003E6FE4 /* loremipsumApp.swift in Sources */,
+				8F14201D27A588F6003E6FE4 /* Cell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,11 +309,14 @@
 				DEVELOPMENT_ASSET_PATHS = "\"loremipsum/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = loremipsum/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -285,7 +326,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -299,11 +340,14 @@
 				DEVELOPMENT_ASSET_PATHS = "\"loremipsum/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = loremipsum/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,7 +357,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -339,6 +383,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8F4F4A8F27A6BCC600C50291 /* XCRemoteSwiftPackageReference "SimpleToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sanzaru/SimpleToast";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8F4F4A9027A6BCC600C50291 /* SimpleToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F4F4A8F27A6BCC600C50291 /* XCRemoteSwiftPackageReference "SimpleToast" */;
+			productName = SimpleToast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8F141FFC27A4110D003E6FE4 /* Project object */;
 }
