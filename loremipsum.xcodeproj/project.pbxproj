@@ -17,6 +17,7 @@
 		8F14201D27A588F6003E6FE4 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F14201C27A588F6003E6FE4 /* Cell.swift */; };
 		8F4F4A9127A6BCC600C50291 /* SimpleToast in Frameworks */ = {isa = PBXBuildFile; productRef = 8F4F4A9027A6BCC600C50291 /* SimpleToast */; };
 		8FABF84727A67C0F00941236 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FABF84627A67C0F00941236 /* Words.swift */; };
+		8FCC7A3E27AA6F660085BF5E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8FCC7A3D27AA6F660085BF5E /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		8F14201C27A588F6003E6FE4 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		8F4F4A8E27A6B11100C50291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8FABF84627A67C0F00941236 /* Words.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Words.swift; sourceTree = "<group>"; };
+		8FCC7A3D27AA6F660085BF5E /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 		8F141FFB27A4110D003E6FE4 = {
 			isa = PBXGroup;
 			children = (
+				8FCC7A3D27AA6F660085BF5E /* .gitignore */,
 				8F14200627A4110D003E6FE4 /* loremipsum */,
 				8F14200527A4110D003E6FE4 /* Products */,
 			);
@@ -159,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F14200F27A4110E003E6FE4 /* Preview Assets.xcassets in Resources */,
+				8FCC7A3E27AA6F660085BF5E /* .gitignore in Resources */,
 				8F14200C27A4110E003E6FE4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
